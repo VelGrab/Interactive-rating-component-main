@@ -1,0 +1,222 @@
+/* Variables */
+
+:root {
+    /* Primary */
+    --orange: hsl(25, 97%, 53%);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey: hsl(216, 12%, 54%);
+    --darkBlue: hsl(213, 19%, 18%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+    --backgroundButtons: hsl(210, 16%, 20%);
+    --transitionColor: hsla(36, 85%, 51%, 0.767);
+}
+
+/* Fonts */ 
+
+html {
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--veryDarkBlue);
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hidden {
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cardContainer,
+.containerHidden {
+    max-width: 325px;
+    height: 300px;
+    background-color: var(--darkBlue);
+    border-radius: 15px;
+}
+
+.star__container {
+    display: flex;
+    background-color: var(--backgroundButtons);
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.star__container img {
+    align-self: center;
+    margin-left: 9px;
+    width: 12px;
+    height: 12px;
+}
+
+.star__container:hover {
+    background-color: var(--transitionColor);
+    transition: all 0.8s;
+}
+
+.main__text h1 {
+    margin-left: 22px;
+    margin-top: 15px;
+    font-size: 2rem;
+    color: var(--white);
+    font-family: Lexend Deca;
+    font-weight: 700;
+}
+
+.text__content p {
+    color: var(--mediumGrey);
+    line-height: 20px;
+    margin-left: 7px;
+    padding: 5px 15px 15px 15px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: Lexend Deca;
+}
+
+.btnBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    border: none;
+    height: 35px;
+    width: 35px;
+    margin: 0 12px 5px 12px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    background-color: var(--backgroundButtons);
+    color: var(--mediumGrey);
+}
+
+.btn:hover {
+    background-color: var(--orange);
+    transition: all 0.8s;
+}
+
+.btnSubmit {
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 15px;
+    border: none;
+    height: 40px;
+    width: 300px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.btnSubmit:hover {
+    background-color: var(--white);
+    transition: all 0.8s;
+    color: var(--orange);
+}
+
+.thanksImg img{
+    margin: 30px auto 0 auto;
+    display: block;
+    width: 120px;
+    height: 80px;
+}
+
+.textRating {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--backgroundButtons);
+    width: 160px;
+    height: 25px;
+    border-radius: 20px;
+}
+
+.textRating p {
+    color: var(--orange);
+    text-align: center;
+    position: absolute;
+    font-size: 1.2rem;
+    font-family: Lexend Deca;
+    top: 48%;
+    left: 30.5%;
+}
+
+.ratingText h1 {
+    text-align: center;
+    color: var(--white);
+    margin-top: 30px;
+    font-weight: 700;
+    font-family: Lexend Deca;    
+}
+
+#thanksText {
+    text-align: center;
+    color: var(--mediumGrey);
+    margin: 15px 17px 0 17px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.error-box {
+    position: relative;
+}
+
+.error-msg {
+    display: none;
+    position: absolute;
+    margin-left: 18px;
+    margin-top: 3px;
+    font-size: 10px;
+    color: var(--orange);
+}
+
+.selected {
+    background-color: var(--orange);
+}
+
+.selectedButton {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.attribution {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--orange);
+}

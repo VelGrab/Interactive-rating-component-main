@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Comfortaa:wght@300;400;700&family=Kumbh+Sans:wght@100;400;700&family=Lexend+Deca&family=Open+Sans&family=Outfit:wght@400;700&family=Overpass:wght@400;700&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <title> Velgrab | Interactive rating component</title>
+  
+</head>
+<body>
+              <!--Card 1-->
+  <main class="flex">
+    <section class="cardContainer">
+        <div class="star__container">
+          <img src="./images/icon-star.svg" alt="Star Icon">
+        </div>
+
+        <div class="main__text">
+          <h1>How did we do ?</h1>
+        </div>
+
+        <div class="text__content">
+          <p>Please let us know how we did with your support request. All feedback is 
+            appreciated to help us improve our offering!
+          </p>
+        </div>
+
+      <div class="btnBox">
+          <button type="button" class="btn ratingBtn" data-value=1>1</button>
+          <button type="button" class="btn ratingBtn" data-value=2>2</button>
+          <button type="button" class="btn ratingBtn" data-value=3>3</button>
+          <button type="button" class="btn ratingBtn" data-value=4>4</button>
+          <button type="button" class="btn ratingBtn" data-value=5>5</button>
+      </div>
+
+        <div>
+          <button class="btnSubmit" type="button">S U B M I T</button>
+        </div>
+
+        <div class="error-box">
+          <p class="error-msg">Please check the rating before submitting</p>
+        </div>
+    </section>
+
+              <!--Card 2-->
+
+    <section class="hidden">
+      <div class="containerHidden">
+
+        <div class="thanksImg">
+          <img src="./images/illustration-thank-you.svg" alt="Thanks Image">
+        </div>
+
+        <div class="ratingText">
+          <div class="textRating">
+            <p>You selected <span class="userRating"></span> out of 5</p>
+          </div>
+
+          <h1>Thank You!</h1>
+          <p id="thanksText">We appreciate you taking the time to give a rating. 
+            If you ever need more support, don't hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by<a href="https://github.com/VelGrab" target="_blank">VelGrab Dev</a>.
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
